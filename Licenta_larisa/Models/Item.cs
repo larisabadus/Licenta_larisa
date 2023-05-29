@@ -8,6 +8,7 @@ namespace Licenta_larisa.Models
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
+        public double Price { get; set; }
         public string Description { get; set; }
         [OneToMany]
         public List<ListItem> ListItems { get; set; }

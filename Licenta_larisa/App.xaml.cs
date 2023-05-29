@@ -16,7 +16,7 @@ public partial class App : Application
             {
                 database = new
 ExpensesDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.
-LocalApplicationData), "Expenses.db3"));
+LocalApplicationData), "Expenses1.db3"));
             }
             return database;
         }

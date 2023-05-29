@@ -9,6 +9,9 @@
             <Editor Placeholder="Enter item name" Margin="20"
  Text="{Binding Description}"
  HeightRequest="50" />
+            <Editor Placeholder="Enter price" Margin="20"
+ Text="{Binding price}"
+ HeightRequest="50" />
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -20,22 +23,27 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Button Text="Save Item" MaximumWidthRequest="200"
- Clicked="OnSaveButtonClicked" />
+                Clicked="OnSaveButtonClicked" />
                 <Button Grid.Column="1"
- Text="Delete Item" MaximumWidthRequest="200"
- Clicked="OnDeleteButtonClicked"/>
+                Text="Delete Item" MaximumWidthRequest="200"
+                Clicked="OnDeleteButtonClicked"/>
                 <ListView Grid.Row="1" Grid.Column="0" x:Name="listView"
- Margin="20" IsRefreshing="True" >
+                    Margin="20" IsRefreshing="True" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding Description}" />
+                            <TextCell Text="{Binding Description}" Detail="{Binding Price}" />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                <Button Grid.Row="2" Grid.Column="0" Text="Add to category"
+                MaximumWidthRequest="200"
+                Clicked="OnAddButtonClicked" />
                 
 
          </Grid>
+            
         </StackLayout>
+        
     </ContentPage.Content>
 
 </ContentPage>

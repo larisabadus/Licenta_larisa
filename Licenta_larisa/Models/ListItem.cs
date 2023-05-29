@@ -8,8 +8,11 @@ namespace Licenta_larisa.Models
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
+
         [ForeignKey(typeof(Expenses))]
         public int ExpensesID { get; set; }
         public int ItemID { get; set; }
+
+        public int PriceID { get; set; }    
     }
 }

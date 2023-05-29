@@ -25,7 +25,7 @@
             Clicked="OnDeleteButtonClicked"/>
         </Grid>
         <ListView x:Name="listView"
- Margin="20">
+          Margin="20">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Detail="{Binding Description}" />
@@ -33,7 +33,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button Text="Add/Choose Item" MaximumWidthRequest="300"
+        <Button Text="Choose Item" MaximumWidthRequest="300"
 Clicked="OnChooseButtonClicked"/>
     </StackLayout>
 

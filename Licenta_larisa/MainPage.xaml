@@ -15,15 +15,15 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="BUGETINO, the app that makes your life more easier!"
+                Text="BUGETINO,"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="This app was developed in 2023 and it helps the users to track their monthly expenses"
+                Text="the money tracker!"
                 SemanticProperties.HeadingLevel="Level2"
-                FontSize="18"
+                FontSize="22"
                 HorizontalOptions="Center" />
 
             <Button

@@ -10,7 +10,7 @@
             <Label FontSize="22" FontAttributes="Bold" Text="Bugetino" VerticalOptions="End" />
             <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
         </HorizontalStackLayout>
-        <Label Text="This app will help you to manage your monthly budget by tracking your expences and economies" />
+        <Label Text="This app is developed to help the user track it's expenses. The user has the possibility to create as many categories as wants and to add subcategories to each one, by adding their name and their price." />
 
     </VerticalStackLayout>
 

@@ -30,25 +30,31 @@ public partial class ExpensePage : ContentPage
 
     }
 
-
-
-
-
-
-
-
-
-
+    
     protected override async void OnAppearing()
     {
         {
             base.OnAppearing();
-            var exp = (Expenses)BindingContext;
+            var expe = (Expenses)BindingContext;
 
-            listView.ItemsSource = await App.Database.GetListItemsAsync(exp.ID);
+            listView.ItemsSource = await App.Database.GetListItemsAsync(expe.ID);
         }
 
 
+    }
+
+    async void OnSaveClicked(object sender, EventArgs e)
+    {
+        var it = (Item)BindingContext;
+        await App.Database.SaveItemAsync(it);
+        listView.ItemsSource = await App.Database.GetItemsAsync();
+    }
+
+    async void OnDeleteClicked(object sender, EventArgs e)
+    {
+        var it = (Item)BindingContext;
+        await App.Database.DeleteItemAsync(it);
+        listView.ItemsSource = await App.Database.GetItemsAsync();
     }
 }
 
